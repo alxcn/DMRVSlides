@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>The Representation Variety of 3-fold symmetry Deligne-Mostow Lattices</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Alejandro Ucan-Puc" />
+    <meta name="author" content="j.w. Elisha Falbel and Irene Pasquineli" />
+    <meta name="date" content="2022-05-23" />
+    <script src="index_files/header-attrs/header-attrs.js"></script>
+    <script type="application/json" id="xaringanExtra-editable-docid">{"id":"xae1c73d15ae44a5a92ef775b17ca424","expires":1}</script>
+    <script src="index_files/himalaya/himalaya.js"></script>
+    <script src="index_files/js-cookie/js.cookie.js"></script>
+    <link href="index_files/editable/editable.css" rel="stylesheet" />
+    <script src="index_files/editable/editable.js"></script>
+    <script src="index_files/fabric/fabric.min.js"></script>
+    <link href="index_files/xaringanExtra-scribble/scribble.css" rel="stylesheet" />
+    <script src="index_files/xaringanExtra-scribble/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <script src="index_files/xaringanExtra-webcam/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# The Representation Variety of 3-fold symmetry Deligne-Mostow Lattices
+]
+.subtitle[
+## Faculty Research Seminar
+]
+.author[
+### Alejandro Ucan-Puc
+]
+.author[
+### j.w. Elisha Falbel and Irene Pasquineli
+]
+.date[
+### 2022-05-23
+]
+
+---
+
+
+
+
+
+
+
+
+
+# _Motivation:_
+## How many (different) geometric structures admit a complex manifold?
+
+
+---
+## Some examples of `\((G,X)-\)`structures:
+.pull-left[
+&lt;span style="font-size:30px"&gt;
+1. `\((Diff(\mathbb{R}^n),\mathbb{R}^n).\)`
+1. `\((Hol(\mathbb{C}^n),\mathbb{C}^n).\)`
+1. `\((Aff(\mathbb{C}^n,\mathbb{C}^n).\)`
+1. `\((PU(1,n),\mathbf{H}^n_{\mathbb{C}}).\)`
+1. `\((PGL(n+1,\mathbb{C}),\mathbb{C}\mathbf{P}^n).\)`
+]
+---
+
+## How to easy this quest?
+--
+
+&lt;span style="font-size:32px"&gt; It is possible to characterize a `\((G,X)-\)`structure by a pair of maps
+&lt;br&gt;&lt;br&gt;
+&lt;span style="font-size:30px"&gt; 1. The __Developping map__ is the map `\(Dev: \tilde{M} \to X\)` where `\(M\)` is the universal cover of the manifold.
+--
+&lt;br&gt;&lt;br&gt;
+&lt;span style="font-size:30px"&gt; 2. The __Holonomy representation__ is the map `\(hol:\pi_1(M)\to G\)` where `\(\pi_1(M)\)` is the fundamental group of the manifold.
+
+--
+&lt;br&gt;&lt;br&gt;
+&gt; &lt;span style="font-size:25px"&gt; The pair `\((Dev,hol)\)` is __unique__.
+
+&lt;/span&gt;
+---
+## What is it known?
+&lt;br&gt;
+&lt;span style="font-size:30px"&gt; In the case of __complex manifolds__, there is some work related to the first question. 
+&lt;br&gt;
+--
+&lt;br&gt;
+&lt;span style="font-size:25px"&gt; 1. Kingler in 1998: characterization of how many different complex projective structures admits a __compact complex manifold.__
+
+&lt;br&gt;
+&lt;span style="font-size:25px"&gt; 2. Mok-Yeong in 1993 (Kingler 2001): for __finite volumen _complex hyperbolic manifold_,__ there is a unique complex projective _compatible_ with the hyperbolic one.
+&lt;/span&gt;
+---
+## Something to note:
+&lt;br&gt;
+&lt;span style="font-size:35px"&gt; 1. The Kingler's description is only for __compact__ manifolds.
+&lt;br&gt;&lt;br&gt;
+
+&lt;span style="font-size:35px"&gt; 2. Mok-Yeong's description only check for __compatibility__ on complex hyperbolic manifolds. 
+
+&lt;/span&gt;
+
+---
+# _Our case of Interest._
+## Deligne-Mostow Lattices 
+
+
+---
+## 3-fold cases and Types
+&lt;middle&gt;
+.pull-left[
+&lt;span style="font-size:30px"&gt; 3-fold Delgine-Mostow lattices belong to the group `\(PU(2,1)\)`. Beside: &lt;/span&gt;
+]
+--
+.pull-rigth[ 
+
+&lt;span style="font-size:25px"&gt; 1. Have an easy _presentation._ &lt;br&gt;
+&lt;span style="font-size:25px"&gt; 2. Have a well-described _fundamental domain._ &lt;br&gt;
+&lt;span style="font-size:25px"&gt; 3. Have _low complexity_. &lt;br&gt;
+&lt;span style="font-size:25px"&gt; 4. Some associated quotients are _non-compact._ &lt;br&gt;
+&lt;/span&gt;
+]
+
+---
+## The general presentation:
+
+&lt;span style="font-size:28px"&gt;
+$$
+\langle J, P, R_1, R_2: J^3=(P^{-1}J)^k=R_1^p=R_2^p=Id, P=R_1 R_2, JR_1 J=R_2 \rangle
+$$
+
+&lt;/span&gt;
+
+
+---
+## The type 1
+
+&lt;span style="font-size:35px"&gt;  The type one Deligne-Mostow lattices are: &lt;/span&gt;
+   
+&lt;span style:"font-size:30px"&gt; __Compact__ :
+* `\((3,4)\)`.
+* `\((3,5)\)`.
+* `\((4,3)\)`.
+* `\((5,2)\)`.
+* `\((5,3)\)`.
+&lt;/span&gt;
+
+&lt;span style:"font-size:30px"&gt; __Non-compact__ :
+* `\((3,6)\)`.
+* `\((4,4)\)`.
+* `\((6,2)\)`.
+* `\((6,3)\)`.
+&lt;/span&gt;
+
+---
+
+# _The Algorithm._
+
+&lt;span style="font-size:35px"&gt; __Step 1:__ Normalize the generators. &lt;/span&gt;
+
+---
+
+## The (normalized) generating matrices.
+
+---
+
+## The polynomial system
+&lt;br&gt;
+&lt;span style="font-size:35px"&gt; __Step 2:__ Using the group relations, we create a polynomial systems. 
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+&lt;/span&gt;
+
+--
+
+
+
+&lt;span style="font-size:35px"&gt; __Step 3:__ We find a Groebner basis, and use it to find the solutions. &lt;/span&gt;
+
+---
+# _The results_
+
+&lt;span style="font-size:35px"&gt; __Theorem:__ Classification of representation of type one Deligne-Mostow lattices with 3-fold symmetry into `\(PGL(3,\mathbb{C}):\)`
+&lt;br&gt;
+
+--
+&lt;span style="font-size:25px"&gt; 1. Representation preserving generator types are locally rigid.
+&lt;br&gt;
+&lt;span style="font-size:25px"&gt; 2. Representations without constrains on generators are also locally rigid, except for lattices `\((4,3),\)` `\((4,4)\)` and `\((6,2)\)` which have one dimensional branches for certain representations with regular elliptic generators.
+
+&lt;/span&gt;
+
+---
+# _Scopes:_
+&lt;br&gt; &lt;br&gt;
+
+&lt;span style="font-size:35px"&gt; 1. The 2-fold symmetry `\(PU(2,1)\)` Deligne-Mostow lattices.
+
+
+&lt;/span&gt;
+
+
+&lt;br&gt; &lt;br&gt;
+&lt;span style="font-size:35px"&gt; 2. The Eisenstein-Piccard lattice in `\(PU(2,1).\)`
+&lt;/span&gt;
+
+---
+
+# Thank you!
+&lt;br&gt;&lt;br&gt;
+## Alejandro Ucan-Puc, j.w. Elisha Falbel and Irene Pasquineli  
+
+#### alejandro.ucan-puc@imj-prg.fr
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

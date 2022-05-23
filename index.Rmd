@@ -1,0 +1,208 @@
+---
+title: "The Representation Variety of 3-fold symmetry Deligne-Mostow Lattices"
+subtitle: "Faculty Research Seminar"  
+author: 
+  - "Alejandro Ucan-Puc"
+  - "j.w. Elisha Falbel and Irene Pasquineli"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+library(png)
+library(grid)
+library(knitr)
+knitr::opts_chunk$set(
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_light(base_color = "#001D8F")
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+xaringanExtra::use_scribble()
+xaringanExtra::use_webcam()
+```
+
+
+# _Motivation:_
+## How many (different) geometric structures admit a complex manifold?
+
+
+---
+## Some examples of $(G,X)-$structures:
+.pull-left[
+<span style="font-size:30px">
+1. $(Diff(\mathbb{R}^n),\mathbb{R}^n).$
+1. $(Hol(\mathbb{C}^n),\mathbb{C}^n).$
+1. $(Aff(\mathbb{C}^n,\mathbb{C}^n).$
+1. $(PU(1,n),\mathbf{H}^n_{\mathbb{C}}).$
+1. $(PGL(n+1,\mathbb{C}),\mathbb{C}\mathbf{P}^n).$
+]
+---
+
+## How to easy this quest?
+--
+
+<span style="font-size:32px"> It is possible to characterize a $(G,X)-$structure by a pair of maps
+<br><br>
+<span style="font-size:30px"> 1. The __Developping map__ is the map $Dev: \tilde{M} \to X$ where $M$ is the universal cover of the manifold.
+--
+<br><br>
+<span style="font-size:30px"> 2. The __Holonomy representation__ is the map $hol:\pi_1(M)\to G$ where $\pi_1(M)$ is the fundamental group of the manifold.
+
+--
+<br><br>
+> <span style="font-size:25px"> The pair $(Dev,hol)$ is __unique__.
+
+</span>
+---
+## What is it known?
+<br>
+<span style="font-size:30px"> In the case of __complex manifolds__, there is some work related to the first question. 
+<br>
+--
+<br>
+<span style="font-size:25px"> 1. Kingler in 1998: characterization of how many different complex projective structures admits a __compact complex manifold.__
+
+<br>
+<span style="font-size:25px"> 2. Mok-Yeong in 1993 (Kingler 2001): for __finite volumen _complex hyperbolic manifold_,__ there is a unique complex projective _compatible_ with the hyperbolic one.
+</span>
+---
+## Something to note:
+<br>
+<span style="font-size:35px"> 1. The Kingler's description is only for __compact__ manifolds.
+<br><br>
+
+<span style="font-size:35px"> 2. Mok-Yeong's description only check for __compatibility__ on complex hyperbolic manifolds. 
+
+</span>
+
+---
+# _Our case of Interest._
+## Deligne-Mostow Lattices 
+
+
+---
+## 3-fold cases and Types
+<middle>
+.pull-left[
+<span style="font-size:30px"> 3-fold Delgine-Mostow lattices belong to the group $PU(2,1)$. Beside: </span>
+]
+--
+.pull-rigth[ 
+
+<span style="font-size:25px"> 1. Have an easy _presentation._ <br>
+<span style="font-size:25px"> 2. Have a well-described _fundamental domain._ <br>
+<span style="font-size:25px"> 3. Have _low complexity_. <br>
+<span style="font-size:25px"> 4. Some associated quotients are _non-compact._ <br>
+</span>
+]
+
+---
+## The general presentation:
+
+<span style="font-size:28px">
+$$
+\langle J, P, R_1, R_2: J^3=(P^{-1}J)^k=R_1^p=R_2^p=Id, P=R_1 R_2, JR_1 J=R_2 \rangle
+$$
+
+</span>
+
+
+---
+## The type 1
+
+<span style="font-size:35px">  The type one Deligne-Mostow lattices are: </span>
+   
+<span style:"font-size:30px"> __Compact__ :
+* $(3,4)$.
+* $(3,5)$.
+* $(4,3)$.
+* $(5,2)$.
+* $(5,3)$.
+</span>
+
+<span style:"font-size:30px"> __Non-compact__ :
+* $(3,6)$.
+* $(4,4)$.
+* $(6,2)$.
+* $(6,3)$.
+</span>
+
+---
+
+# _The Algorithm._
+
+<span style="font-size:35px"> __Step 1:__ Normalize the generators. </span>
+
+---
+
+## The (normalized) generating matrices.
+
+---
+
+## The polynomial system
+<br>
+<span style="font-size:35px"> __Step 2:__ Using the group relations, we create a polynomial systems. 
+
+<br><br><br>
+</span>
+
+--
+
+
+
+<span style="font-size:35px"> __Step 3:__ We find a Groebner basis, and use it to find the solutions. </span>
+
+---
+# _The results_
+
+<span style="font-size:35px"> __Theorem:__ Classification of representation of type one Deligne-Mostow lattices with 3-fold symmetry into $PGL(3,\mathbb{C}):$
+<br>
+
+--
+<span style="font-size:25px"> 1. Representation preserving generator types are locally rigid.
+<br>
+<span style="font-size:25px"> 2. Representations without constrains on generators are also locally rigid, except for lattices $(4,3),$ $(4,4)$ and $(6,2)$ which have one dimensional branches for certain representations with regular elliptic generators.
+
+</span>
+
+---
+# _Scopes:_
+<br> <br>
+
+<span style="font-size:35px"> 1. The 2-fold symmetry $PU(2,1)$ Deligne-Mostow lattices.
+
+
+</span>
+
+
+<br> <br>
+<span style="font-size:35px"> 2. The Eisenstein-Piccard lattice in $PU(2,1).$
+</span>
+
+---
+
+# Thank you!
+<br><br>
+## `r rmarkdown::metadata$author`  
+
+#### alejandro.ucan-puc@imj-prg.fr
